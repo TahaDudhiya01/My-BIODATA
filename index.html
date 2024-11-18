@@ -71,8 +71,8 @@
             x = Math.floor(Math.random() * (wrapperRect.width - noBtnRect.width));
             y = Math.floor(Math.random() * (wrapperRect.height - noBtnRect.height));
         } while (
-            Math.abs(x - noBtn.offsetLeft) < minDistance ||
-            Math.abs(y - noBtn.offsetTop) < minDistance
+            Math.abs(x - noBtn.offsetLeft) < 50 &&
+            Math.abs(y - noBtn.offsetTop) < 50
         );
 
         // Set the new position
