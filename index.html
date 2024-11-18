@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="heading">
+            BIODATA
+        </div>
+    </header>
+    <main>
+        <div class="mainsection">
+            <div class="imgfolder">
+                <div id="img1"></div>
+                <div id="img2"></div>
+            </div>
+        </div>
+        <div class="mainsection2">
+            <div class="data">
+                <ul>
+                    <li>Name : Taha Dudhiya Wala</li>
+                    <li>Father : Ali Asgar Dudhiya wala</li>
+                    <li>Mother : Fatema Dudhiya wala</li>
+                    <li>sister : Khadija Dudhiiya wala</li>
+                    <li>AGE : 19 </li>
+                    <li>DOB : 08/01/2005</li>
+                    <li>Hight : 5.2 (not exactly know)</li>
+                    <li>ITS No. : 30920374</li>
+                    <li>Study : B.Tech (CSE)</li>
+                    <li>Mo. no. : +91 8224034251</li>
+                    <li>Address : Kukshi Road Near By Mohamdiya School , Bhabra , District Alirajpur , MP</li>
+                    <li>Hobby : WEB Devlopment , programming and many more... </li>
+                </ul>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="question">Do You Like My Biodata?</div>
+            <button class="yes-btn">Yes</button>
+            <button class="no-btn">No</button>
+        </div>
+    </main>
+</body>
+<script>
+    const wrapper = document.querySelector('.wrapper');
+    const question = document.querySelector('.question');
+    const yesBtn = document.querySelector('.yes-btn');
+    const noBtn = document.querySelector('.no-btn');
+
+    const wrapperRect = wrapper.getBoundingClientRect();
+    const noBtnRect = noBtn.getBoundingClientRect();
+
+    yesBtn.addEventListener('click', () => {
+        question.innerHTML = 'THANK YOU ☺️';
+    });
+
+    noBtn.addEventListener('click', () => {
+        // Increase the range by using larger offsets
+        const x = Math.floor(Math.random() * (wrapperRect.width - noBtnRect.width * 2)) + noBtnRect.width;
+        const y = Math.floor(Math.random() * (wrapperRect.height - noBtnRect.height * 2)) + noBtnRect.height;
+
+        noBtn.style.left = x + 'px';
+        noBtn.style.top = y + 'px';
+    });
+</script>
+
+</html>

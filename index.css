@@ -1,0 +1,245 @@
+* {
+    margin: 0%;
+}
+
+body {
+    background-color: #CBF3F0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 100%;
+    background-color: white;
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.mainsection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgfolder {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    height: 190px;
+    width: 300px;
+    margin-top: 30px;
+    background-color: azure;
+    border-top: 5px solid red;
+    border-right: 5px solid blue;
+    border-bottom: 5px solid green;
+    border-left: 5px solid yellow;
+}
+
+#img1 {
+    height: 100%;
+    width: 50%;
+    background-image: url(me\ 1.jpg);
+    background-size: cover;
+    border-radius: 3px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+#img2 {
+    height: 100%;
+    width: 50%;
+    background-image: url(me2.jpg);
+    background-size: cover;
+    border-radius: 3x;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.mainsection2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.data {
+    width: 90%;
+    margin-top: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    border-radius: 20px;
+    background-color: azure;
+    padding: 20px;
+}
+
+.data li {
+    padding: 7px 0px 7px 0px;
+}
+
+/*  */
+/* for feedback */
+.wrapper {
+    width: 90%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    background: rgb(125, 211, 240);
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border-radius: 25px;
+}
+
+.question {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 40px;
+}
+
+.yes-btn,
+.no-btn {
+    position: absolute;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.yes-btn {
+    text-align: center;
+    height: 50px;
+    width: 130px;
+    background-color: lightpink;
+    border-radius: 20px;
+}
+
+.no-btn {
+    text-align: center;
+    height: 50px;
+    width: 130px;
+    background-color: lightpink;
+    border-radius: 20px;
+}
+
+/*  */
+@media (max-width: 10000px) and (min-width: 1500px) {
+    .heading {
+        height: 100px;
+        font-size: 90px;
+    }
+
+    .data {
+        font-size: 50px;
+    }
+
+    .data ul {
+        margin-left: 40px;
+    }
+
+    .imgfolder {
+        height: 700px;
+        width: 1300px;
+    }
+
+    .yes-btn {
+        top: 50%;
+        left: 30%;
+        height: 80px;
+        width: 280px;
+        font-size: 40px;
+    }
+
+    .no-btn {
+        top: 50%;
+        right: 30%;
+        height: 80px;
+        width: 280px;
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 1499px) and (min-width: 900px) {
+    .heading {
+        height: 70px;
+        font-size: 60px;
+    }
+
+    .data {
+        font-size: 30px;
+    }
+
+    .data ul {
+        margin-left: 30px;
+    }
+
+    .imgfolder {
+        height: 500px;
+        width: 800px;
+    }
+
+    .yes-btn {
+        top: 50%;
+        left: 30%;
+        height: 50px;
+        width: 150px;
+        font-size: 20px;
+    }
+
+    .no-btn {
+        top: 50%;
+        right: 30%;
+        height: 50px;
+        width: 150px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 899px) and (min-width: 600px) {
+    .heading {
+        height: 50px;
+        font-size: 40px;
+    }
+
+    .data {
+        font-size: 20px;
+    }
+
+    .data ul {
+        margin-left: 15px;
+    }
+
+    .imgfolder {
+        height: 350px;
+        width: 500px;
+    }
+
+    .yes-btn {
+        top: 50%;
+        left: 20%;
+    }
+
+    .no-btn {
+        top: 50%;
+        right: 20%;
+    }
+}
+
+@media (max-width: 599px) and (min-width: 300px) {
+    .yes-btn {
+        top: 55%;
+        left: 30%;
+    }
+
+    .no-btn {
+        top: 75%;
+        left: 30%;
+    }
+}
